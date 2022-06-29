@@ -1,6 +1,7 @@
 # IIS-PROJEKAT Organizacija dogadjaja i restoran u okviru hotela
 
 Nastasja Dostanic IN18-2018 Organizacija dogadjaja
+
 David Egelja IN47-2018 Restoran
 
 Projekat je radjen u razvojnom okruzenju IntelliJ (backend), Visual Studio Code (front) dok je baza podataka radjena u MySql programu. 
