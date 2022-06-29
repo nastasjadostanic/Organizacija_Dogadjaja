@@ -1,0 +1,29 @@
+
+--user
+INSERT INTO `isa2021_database`.`user` (`id`, `address`, `city`, `country`, `email`, `first_name`, `last_name`, `password`, `phone_number`, `type`) VALUES ('1', 'Panonska 6', 'Futog', 'Serbia', 'gedgedfor@gmail.com', 'David', 'Egelja', '123', '069', 'gost');
+INSERT INTO `isa2021_database`.`user` (`id`, `address`, `city`, `country`, `email`, `first_name`, `last_name`, `password`, `phone_number`, `type`) VALUES ('2', 'Panonska 6', 'Futog', 'Serbia', 'stasa.nastasja@gmail.com', 'Nastasja', 'Dostanic', '123', '069', 'gost');
+INSERT INTO `isa2021_database`.`user` (`id`, `address`, `city`, `country`, `email`, `first_name`, `last_name`, `password`, `phone_number`, `type`) VALUES ('3', 'Panonska 6', 'Futog', 'Serbia', 'gedgedfor@gmail.com', 'David', 'Egelja', '456', '069', 'gost');
+INSERT INTO `isa2021_database`.`user` (`id`, `address`, `city`, `country`, `email`, `first_name`, `last_name`, `password`, `phone_number`, `type`) VALUES ('4', 'Panonska 6', 'Futog', 'Serbia', 'stasa.nastasja@gmail.com', 'Nastasja', 'Dostanic', '111', '069', 'organizator');
+
+--dogadjaji
+INSERT INTO `isa2021_database`.`dogadjaji` (`id`, `datum_naplate`, `datum_odrzavanja`, `tip`, `trajanje`, `ukupna_cena`, `vreme_odrzavanja`, `salaid`, `modifikacija_sale`, `ljudski_resurs_id` , `ostali_resurs_id`) VALUES ('1', '2022-06-18', '2022-06-18', 'Vencanje', '5', '250', '17', '1','', '1', '1');
+INSERT INTO `isa2021_database`.`dogadjaji` (`id`, `datum_naplate`, `datum_odrzavanja`, `tip`, `trajanje`, `ukupna_cena`, `vreme_odrzavanja`, `salaid`, `modifikacija_sale`, `ljudski_resurs_id` , `ostali_resurs_id`) VALUES ('2', '2022-06-19', '2022-06-19', 'Vencanje', '3', '420', '20', '2','Stolovi za stajanje', '1', '2');
+INSERT INTO `isa2021_database`.`dogadjaji` (`id`, `datum_naplate`, `datum_odrzavanja`, `tip`, `trajanje`, `ukupna_cena`, `vreme_odrzavanja`, `salaid`, `modifikacija_sale`, `ljudski_resurs_id` , `ostali_resurs_id`) VALUES ('3', '2022-06-25', '2022-06-25', 'Konferencija', '3', '200', '15', '3','Stolovi za stajanje', '2', '3');
+
+--ljudski_resursi
+INSERT INTO `isa2021_database`.`ljudski_resursi` (`id`, `broj_ljudi`, `cena`, `dogadjajid`, `naziv`, `oblast_delovanja`, `vrsta`) VALUES ('1', '3', '064444444', '150', '1', 'Bend BlaBla', 'Muzika', 'Klasicna');
+INSERT INTO `isa2021_database`.`ljudski_resursi` (`id`, `broj_ljudi`, `cena`, `dogadjajid`, `naziv`, `oblast_delovanja`, `vrsta`) VALUES ('1', '1', '067777777', '100', '3', 'Predavac', 'Biologija', 'Morska');
+
+--ostali resursi
+INSERT INTO `isa2021_database`.`ostali_resursi` (`id`, `boja`, `cena`, `dogadjajid`, `kolicina`, `naziv`, `stil`, `tip`) VALUES ('1', 'Bela', '50', '1', '100', 'Ukras', 'Klasnican', 'Svece');
+INSERT INTO `isa2021_database`.`ostali_resursi` (`id`, `boja`, `cena`, `dogadjajid`, `kolicina`, `naziv`, `stil`, `tip`) VALUES ('2', 'Roza', '70', '2', '40', 'Ukras', 'Moderan', 'Vaze');
+INSERT INTO `isa2021_database`.`ostali_resursi` (`id`, `boja`, `cena`, `dogadjajid`, `kolicina`, `naziv`, `stil`, `tip`) VALUES ('3', 'Crvena', '100', '3', '300', 'Ukras za stolice', 'Klasnican', 'Prekrivac');
+
+--sale
+INSERT INTO `isa2021_database`.`sale` (`id`, `tip`, `vrste_dogadjaja`, `broj_mesta`, `cena`, `naziv`) VALUES ('1', 'Za vencanje', 'Vencanje', '100', '200', 'Mala sala za vencanja');
+INSERT INTO `isa2021_database`.`sale` (`id`, `tip`, `vrste_dogadjaja`, `broj_mesta`, `cena`, `naziv`) VALUES ('2', 'Za vencanje', 'Vencanje', '200', '400', 'Velika sala za vencanja');
+INSERT INTO `isa2021_database`.`sale` (`id`, `tip`, `vrste_dogadjaja`, `broj_mesta`, `cena`, `naziv`) VALUES ('3', 'Za konferenciju', 'Konferencija', '100', '150', 'Sala za konferencije');
+INSERT INTO `isa2021_database`.`sale` (`id`, `tip`, `vrste_dogadjaja`, `broj_mesta`, `cena`, `naziv`) VALUES ('4', 'Univerzalna', '', '300', '450', 'Univerzalna sala');
+
+
+

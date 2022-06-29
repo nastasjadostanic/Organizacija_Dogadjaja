@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@reach/combobox": "^0.17.0",
+    "react-pro-sidebar": "^0.7.1",
+    "react-scripts": "^5.0.1",
+    "react-widgets": "^5.8.4"
+  }
+}
